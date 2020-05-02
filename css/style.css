@@ -1,45 +1,78 @@
 #wrapper{
-  height: 600px;
+  height: 100%;
   width:1000px;
-  background-color: pink;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: white;
+margin: auto;
+z-index: -1
 }
+
 header{
   width: 1000px;
-  height: 100px;
-  background-color: #FFBA91;
+  height:100px;
+  background-color: #666666;
+  position: relative;
+top: 0px;
+z-index: 2;
+}
+
+img {
 
 }
-nav{
-  width: 1000px;
-  height: 60px;
-  background-color: #30B3B3;
-font-size: 40px;
+
+h1{
+
 font-family: monospace;
+font-size: 50px;
+color: white;
+z-index: 1;
+
+}
+
+
+.logga {
+  top:5px;
+  padding: 5px;
+  z-index: 3;
+position: absolute;
+}
+
+
+h2 {
+background-color: white;
+font-size: 35px;
+font-family: monospace;
+color: Black;
+z-index: 0;
+position: relative;
+}
+
+p {
+padding-left: 10px;
 color: black;
 }
+
 #center{
   display:flex;
 }
-main{
-  height:400px;
-  width:800px;
-  background-color: white;
-}
-aside{
-  height:400px;
-  width:100px;
-  background-color: purple;
 
+main {
+  width:100%;
 }
+
+aside
+{
+  height:600px;
+  width:150px;
+  background-color: purple;
+}
+
 footer{
   height: 100px;
   width: 1000px;
   background-color: green;
-
-
 }
+
+
 
 /*________  formatering av länkar ______________________*/
 
@@ -68,6 +101,6 @@ font-size: 15px;
 }
 
 a:link {
-  text-decoration: inherit;
+  text-decoration: underline;
 padding-left: 10px;
 }
