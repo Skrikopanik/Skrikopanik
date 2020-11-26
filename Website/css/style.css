@@ -28,18 +28,26 @@ h1{
 }
 h3{
   margin-left: 200px;
+  color: white;
 }
 h2{
   margin-left: 30px;
   padding-top: 30px;
   font-size: 40px;
+  color: white;
 }
 h4{
   margin-left: 30px;
   padding-top: 10px;
   font-size: 30px;
+  color: white;
 }
-
+li{
+  margin-left: 30px;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+}
 #wrapper{
   width: 100%;
   margin-left: auto;
