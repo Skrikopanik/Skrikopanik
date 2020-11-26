@@ -152,6 +152,7 @@ position: absolute;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+
     background-image:  url("../img/hej.jpeg");
 
   }
@@ -166,13 +167,14 @@ position: absolute;
 }
 
 #box1{
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 25%;
   background-color: #04052E;
   margin-right: auto;
   margin-left: auto;
   margin-top:50px;
   border-radius: 20px;
+
 
 }
 
@@ -180,8 +182,8 @@ position: absolute;
 
 
 #box2{
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 25%;
   background-color: #04052E;
   margin-right: auto;
   margin-left: auto;
@@ -190,24 +192,26 @@ position: absolute;
     background-image:  url("../img/Sorry.png");
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 
 #box3{
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 25%;
   background-color: #04052E;
   margin-right: auto;
   margin-left: auto;
   border-radius: 20px;
+
 }
 
 
 
 
 #box4{
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 25%;
   background-color: #04052E;
   margin-right: auto;
   margin-left: auto;
@@ -215,23 +219,26 @@ position: absolute;
   background-image:  url("../img/Sorry.png");
   background-repeat: no-repeat;
   background-position: center;
+
+
 }
 
 #box5{
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 25%;
   background-color: #04052E;
   margin-right: auto;
   margin-left: auto;
   border-radius: 20px;
+
 }
 
 
 
 
 #box6{
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 25%;
   background-color: #04052E;
   margin-right: auto;
   margin-left: auto;
@@ -239,6 +246,7 @@ position: absolute;
   background-image:  url("../img/Sorry.png") ;
 background-repeat: no-repeat;
 background-position: center;
+
 
 }
 
@@ -261,7 +269,7 @@ background-position: center;
   }
 
 
-  @media screen and (max-width:500px){
+  @media screen and (max-width:750px){
     #wrapper{
       width: 100%;
 
@@ -293,15 +301,7 @@ background-position: center;
       visibility: hidden;
       position: absolute;
 }
-      #box1{
-        width: 200px;
-        height: 200px;
-        background-color: #04052E;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top:50px;
-        border-radius: 20px;
-      }
+
 
       footer{
 
@@ -329,31 +329,18 @@ background-position: center;
  #box1{
    width: 300px;
    height: 300px;
-   background-color: #04052E;
-   margin-right: auto;
-   margin-left: auto;
-   margin-top:50px;
-   border-radius: 20px;
  }
 
       #box2{
         width: 300px;
         height: 300px;
         background-color: #04052E;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top:50px;
-          border-radius: 20px;
       }
 
 
       #box3{
         width: 300px;
         height: 300px;
-        background-color: #04052E;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 20px;
         margin-top:50px;
       }
 
@@ -363,20 +350,12 @@ background-position: center;
       #box4{
         width: 300px;
         height: 300px;
-        background-color: #04052E;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 20px;
         margin-top:50px;
       }
 
       #box5{
         width: 300px;
         height: 300px;
-        background-color: #04052E;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 20px;
         margin-top:50px;
       }
 
@@ -386,10 +365,8 @@ background-position: center;
       #box6{
         width: 300px;
         height: 300px;
-        background-color: #04052E;
-        margin: auto;
-        border-radius: 20px;
         margin-top:50px;
+
       }
 
 
