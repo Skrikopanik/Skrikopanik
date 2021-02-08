@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style media="screen">
+
+  #window{
+    height: 200px;
+    width: 200px;
+    border:1px solid;
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #pictures{
+    position: relative;
+    margin: 5px;
+  }
+
+</style>
+
+
+
+</head>
+<body>
+  <div id="window">
+    <div id="pictures">                   <!--Bilder -->
+      <img src="img/bild1.png" alt="">     <!--Bilder -->
+      <img src="img/bild2.jpg" alt="">     <!--Bilder -->
+      <img src="img/bild3.jpg" alt="">       <!--Bilder -->
+
+    </div>
+  </div>
+
+  <button id="button2">Up</button>         <!-- Knapp för att slidern ska slida upp-->
+  <button id="button1">Down</button>       <!-- Knapp För att slidern ska slida ner-->
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   <!-- jquery -->
+  <script>
+  var i=2;      //Variabeln som berättar när det inte finns mer bilder
+  $("#window").css("overflow", "hidden");
+  $("#button1").click(function(){
+    i++;  //ökar i värdet när man trycker på ner knappen
+    if(i==5){  //ifall i når 5 så körs allt innom detta
+      i=2;  //i får värdet av bilden man flyttar till
+      $('#pictures').animate({ //när man trycker på knappen och det inte finns fler bilder åt det hållet
+        'top' : "-=-410px"
+      }, 100); //tid på animationen när slidern når sista bild
+    }else{
+      $('#pictures').animate({ //när man trycker på knappen
+        'top' : "-=205px" //ner
+      });
+    }
+  });
+
+
+
+
+
+  $("#button2").click(function(){
+    i--;  //minskar i värdet när man trycker på up knappen
+    if(i==1){    //ifall i når 1 så körs allt innom detta
+      i=4; //i får värdet av bilden man flyttar till
+      $('#pictures').animate({ //när man trycker på knappen och det inte finns fler bilder åt det hållet
+        'top' : "-=410px"
+      }, 100);  //tid på animationen när slidern når sista bild
+    }else{
+
+      $('#pictures').animate({         //när man trycker på knappen
+        'top' : "-=-205px" //upp
+      });
+    }
+  });
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>

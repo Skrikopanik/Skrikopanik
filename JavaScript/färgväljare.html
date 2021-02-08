@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+#diveru{
+  display: none;
+}
+</style>
+
+
+  </head>
+
+
+  <body>
+    <div id=diveru>
+    <form action="validate.php" method="get">
+
+    <label for="name">Choose a color: </label>
+    <input type="color" name="c" id="crayoncolor">
+    </form>
+
+    <button type="button" id="colorbutton" name="btn">välj färg</button>
+</div>
+  <script>
+  document.getElementById("diveru").style.display="block";
+  var b =localStorage.getItem("color");
+  document.body.style.backgroundColor=b;
+
+
+    document.getElementById("colorbutton").addEventListener("click",changebackground);
+
+    function changebackground(){
+
+
+    var x = document.getElementById("crayoncolor").value;
+    console.log(x);
+    document.body.style.backgroundColor = x;
+    localStorage.setItem("color", x );
+
+
+
+  }
+
+
+
+    </script>
+  </body>
+</html>
